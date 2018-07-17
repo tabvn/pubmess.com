@@ -1,0 +1,15 @@
+api/node_modules
+app/node_modules
+app/package-lock.json
+api/package-lock.json
+app/build
+api/dist
+.idea
+.idea/*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+IOS/PubMess/Podfile.lock
+IOS/PubMess/Pods
