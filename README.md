@@ -32,7 +32,20 @@ pod install
 open PubMess.xcworkspace
 ```
 
+
+
 Made Easy in Swift 4 Pubsub client
+
+init PubSub
+
+```
+
+ let websocketUrl = URL(string: "wss://pubmess.com")
+ let pubSub =  PubSub.init(url: websocketUrl)
+ pubSub?.connect()
+
+
+```
 
 ```
 const subscription = PubSub.subscribe(topic: "topic-abc/users",  { (message: Any) in
