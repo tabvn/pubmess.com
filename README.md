@@ -49,7 +49,7 @@ init PubSub
 
 Subscribe a topic
 
-```
+``` swift
 const subscription = PubSub.subscribe(topic: "topic-abc/users",  { (message: Any) in
  
  print("Received message from topic", message)
@@ -59,12 +59,12 @@ const subscription = PubSub.subscribe(topic: "topic-abc/users",  { (message: Any
 ```
 
 // if want to ubsubscribe or remove subscription
-```
+```swift
 subscription.remove() 
 ```
 or 
 
-```
+```swift
 PubSub.unsubscribe("topic-abc/users")
 
 ```
@@ -73,15 +73,16 @@ PubSub.unsubscribe("topic-abc/users")
 
 Publish a message to topic 
 
-```
+```swift
 PubSub.publish(topic: "topic-abc/users", message: ["user": "Toan Nguyen Dinh"])
+
 ```
 
 
 
 Broadcast a message to topic , This is send a message to every one is subscribed this topic but exclude sender. 
 
-```
+```swift
 PubSub.broadcast(topic: "topic-abc/users", message: ["user": "Toan Nguyen Dinh"])
 ```
 
