@@ -38,7 +38,7 @@ Made Easy in Swift 4 Pubsub client
 
 init PubSub
 
-```
+```swift
 
  let websocketUrl = URL(string: "wss://pubmess.com")
  let pubSub =  PubSub.init(url: websocketUrl)
