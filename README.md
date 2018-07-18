@@ -47,6 +47,8 @@ init PubSub
 
 ```
 
+Subscribe a topic
+
 ```
 const subscription = PubSub.subscribe(topic: "topic-abc/users",  { (message: Any) in
  
@@ -69,9 +71,18 @@ PubSub.unsubscribe("topic-abc/users")
 
 
 
+Publish a message to topic 
 
 ```
 PubSub.publish(topic: "topic-abc/users", message: ["user": "Toan Nguyen Dinh"])
+```
+
+
+
+Broadcast a message to topic , This is send a message to every one is subscribed this topic but exclude sender. 
+
+```
+PubSub.broadcast(topic: "topic-abc/users", message: ["user": "Toan Nguyen Dinh"])
 ```
 
 
