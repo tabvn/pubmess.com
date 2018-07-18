@@ -32,6 +32,36 @@ pod install
 open PubMess.xcworkspace
 ```
 
+Made Easy in Swift 4 Pubsub client
+
+```
+const subscription = PubSub.subscribe(topic: "topic-abc/users",  { (message: Any) in
+ 
+ print("Received message from topic", message)
+ 
+}
+
+```
+
+// if want to ubsubscribe or remove subscription
+```
+subscription.remove() 
+```
+or 
+
+```
+PubSub.unsubscribe("topic-abc/users")
+
+```
+
+
+
+
+```
+PubSub.publish(topic: "topic-abc/users", message: ["user": "Toan Nguyen Dinh"])
+```
+
+
 
 ## Video Playlist
 
