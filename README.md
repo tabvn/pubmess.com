@@ -86,6 +86,9 @@ Broadcast a message to topic , This is send a message to every one is subscribed
 PubSub.broadcast(topic: "topic-abc/users", message: ["user": "Toan Nguyen Dinh"])
 ```
 
+### @Todo: 
+Implement muti nodes (pub/sub ) idea is integrated with Redis database for pub/sub channel and allow mutiple servers (nodes) can communicate and send to subscribers
+
 
 
 ## Video Playlist
